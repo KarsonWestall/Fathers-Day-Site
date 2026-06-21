@@ -8,37 +8,109 @@
 </head>
 <body>
 
+    <canvas id="blossom-canvas"></canvas>
+
     <header>
-        <h1>Happy Father's Day, Dad!</h1>
-        <p>Welcome to your own little corner of the internet.</p>
+        <div class="header-branch branch-left">
+            <img src="images/cherry-branch.png" alt="Cherry Blossom Branch Left">
+        </div>
+        <div class="header-branch branch-right">
+            <img src="images/cherry-branch.png" alt="Cherry Blossom Branch Right">
+        </div>
+
+        <div class="hero-content">
+            <h1>Happy Father's Day, Dad!</h1>
+            <p>Welcome to your own little corner of the internet.</p>
+        </div>
     </header>
 
     <main class="container">
-        <section class="card letter">
+        
+        <section class="card letter reveal">
             <h2>Dear Dad,</h2>
-            <p>Thank you for everything you do. Put your main heart-to-heart message right here! You can write as much as you'd like.</p>
+            <p>Thank you so much for making me the man I am today. Your lessons, no matter how hard to swallow, have been the most impactful moments toward shaping me and probably my kids as well. Not all of your lessons were hard though. We have shared a ton of awesome memories together that were made possible thanks to you, and I know that I will never forget them.</p>
+            <p>Love,<br> Karson</p>
         </section>
 
-        <section>
-            <h2 class="section-title">Some of My Favorite Memories</h2>
-            <div class="photo-grid">
-                <div class="photo-card">
-                    <img src="images/placeholder1.jpg" alt="Memory 1">
-                    <div class="caption">Change the image source to your own photo!</div>
+        <section class="timeline-section">
+            <h2 class="section-title reveal">Our Story Through the Years</h2>
+            
+            <div class="timeline">
+                
+                <div class="timeline-item reveal">
+                    <div class="timeline-gallery">
+                        <div class="animated-frame"><img src="images/trip1.jpg" alt="Trip Photo 1"></div>
+                        <div class="animated-frame"><img src="images/trip2.jpg" alt="Trip Photo 2"></div>
+                        <div class="animated-frame"><img src="images/trip3.jpg" alt="Trip Photo 3"></div>
+                        <div class="animated-frame"><img src="images/trip4.jpg" alt="Trip Photo 4"></div>
+                        <div class="animated-frame"><img src="images/trip5.jpg" alt="Trip Photo 5"></div>
+                        <div class="animated-frame"><img src="images/trip6.jpg" alt="Trip Photo 6"></div>
+                    </div>
+                    <div class="timeline-text">
+                        <h3>The Great Adventures</h3>
+                        <p>From road trips to hotel travels, these are some of my absolute favorite memories of us exploring new places together.</p>
+                    </div>
                 </div>
-                <div class="photo-card">
-                    <img src="images/placeholder2.jpg" alt="Memory 2">
-                    <div class="caption">Add a nice, funny, or sentimental caption here.</div>
+                
+                <div class="timeline-item reveal">
+                    <div class="timeline-gallery">
+                        <div class="animated-frame"><img src="images/milestone1.jpg" alt="Milestone 1"></div>
+                        <div class="animated-frame"><img src="images/milestone2.jpg" alt="Milestone 2"></div>
+                        <div class="animated-frame"><img src="images/milestone3.jpg" alt="Milestone 3"></div>
+                        <div class="animated-frame"><img src="images/milestone4.jpg" alt="Milestone 4"></div>
+                        <div class="animated-frame"><img src="images/milestone5.jpg" alt="Milestone 5"></div>
+                        <div class="animated-frame"><img src="images/milestone6.jpg" alt="Milestone 6"></div>
+                    </div>
+                    <div class="timeline-text">
+                        <h3>Through the Years</h3>
+                        <p>Thank you for being there for every milestone, graduation, and crazy phase of my life. I couldn't have asked for a better guide or a bigger supporter.</p>
+                    </div>
                 </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-gallery">
+                        <div class="animated-frame"><img src="images/everyday1.jpg" alt="Everyday 1"></div>
+                        <div class="animated-frame"><img src="images/everyday2.jpg" alt="Everyday 2"></div>
+                        <div class="animated-frame"><img src="images/everyday3.jpg" alt="Everyday 3"></div>
+                        <div class="animated-frame"><img src="images/everyday4.jpg" alt="Everyday 4"></div>
+                        <div class="animated-frame"><img src="images/everyday5.jpg" alt="Everyday 5"></div>
+                        <div class="animated-frame"><img src="images/everyday6.jpg" alt="Everyday 6"></div>
+                    </div>
+                    <div class="timeline-text">
+                        <h3>The Simple Moments</h3>
+                        <p>It doesn't always have to be a massive holiday or getaway. Some of my favorite memories are just the weekend routines, fixing things around the house, exploring, or cracking jokes.</p>
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <section class="card joke-section">
+        <section class="card joke-section reveal">
             <h3>Need a classic Dad Joke?</h3>
             <p id="joke-text">Click the button below.</p>
             <button id="joke-btn">Tell Me a Joke</button>
         </section>
+        
     </main>
+
+    <footer class="closing-banner">
+        <div class="footer-branch branch-left">
+            <img src="images/cherry-branch.png" alt="Cherry Blossom Branch Left">
+        </div>
+        <div class="footer-branch branch-right">
+            <img src="images/cherry-branch.png" alt="Cherry Blossom Branch Right">
+        </div>
+
+        <div class="footer-content">
+            <h2>THANK YOU, DAD!</h2>
+            <p>For everything you are, and everything you do.</p>
+        </div>
+    </footer>
+
+    <div id="image-modal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modal-img" alt="Full view picture">
+    </div>
 
     <script src="script.js"></script>
 </body>
